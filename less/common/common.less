@@ -1,0 +1,214 @@
+@import "body.less";
+
+@import "type.less";
+@import "a.less";
+@import "navbars.less";
+//@import "dropdowns.less";
+@import "wells.less";
+@import "buttons.less";
+@import "pager.less";
+@import "pagination.less";
+@import "menu-cards.less";
+
+@import "navbar-user.less";
+@import "banner.less";
+@import "breadcrumbs.less";
+@import "search.less";
+@import "navbar-mainmenu.less";
+@import "navbar-xsmenu.less";
+@import "content.less";
+@import "main-content.less";
+@import "sidebars.less";
+@import "footer.less";
+
+@import "flexicontact.less";
+@import "fsf.less";
+@import "weblinks.less";
+@import "phocagallery.less";
+
+.sidebar {
+	.navbar-nav {
+		&>li {
+			a {
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+		}
+	}
+}
+
+.element-invisible {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+#pop-print {
+	float: right;
+	margin: 10px;
+}
+
+.glyphicon-group:before,
+.glyphicon-users:before {
+  content: "\e008";
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+a {
+	.transition(~"color .25s ease, background-color .25s ease");
+}
+
+.btn, button, span {
+	.transition(background-color .25s ease);
+}
+
+
+.navbar-xsmenu .navbar-brand.navbar-xsmenu-logo {
+	&,
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: transparent;
+	}
+}
+
+footer .well {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer .nav-pills li a {
+	min-width: 135px;
+	text-align: center;
+}
+
+.footer .nav-pills li a [class^="awe-"].block,
+[class*=" awe-"].block {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.main-content {
+	.nav-pills {
+		> li {
+			&>a:hover,
+			&>a:focus {
+				background: transparent;
+			}
+		}
+	}
+}
+
+/*.footer .nav li a {
+	font-size: 14px;
+}
+*/
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: @screen-sm-min) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
+
+
+.btn-xs-block {
+	display: block;
+	width: 100%;
+}
+input[type="submit"].btn-xs-block,
+input[type="reset"].btn-xs-block,
+input[type="button"].btn-xs-block {
+	width: 100%;
+}
+.btn-block + .btn-xs-block,
+.btn-xs-block + .btn-block,
+.btn-xs-block + .btn-xs-block {
+	margin-top: 0.5rem;
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .btn-sm-block {
+        display: block;
+        width: 100%;
+    }
+    input[type="submit"].btn-sm-block,
+    input[type="reset"].btn-sm-block,
+    input[type="button"].btn-sm-block {
+        width: 100%;
+    }
+    .btn-block + .btn-sm-block,
+    .btn-sm-block + .btn-block,
+    .btn-sm-block + .btn-sm-block {
+        margin-top: 0.5rem;
+    }
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .btn-md-block {
+        display: block;
+        width: 100%;
+    }
+    input[type="submit"].btn-md-block,
+    input[type="reset"].btn-md-block,
+    input[type="button"].btn-md-block {
+        width: 100%;
+    }
+    .btn-block + .btn-md-block,
+    .btn-md-block + .btn-block,
+    .btn-md-block + .btn-md-block {
+        margin-top: 0.5rem;
+    }
+}
+@media (min-width: @screen-lg-min) {
+    .btn-lg-block {
+        display: block;
+        width: 100%;
+    }
+    input[type="submit"].btn-lg-block,
+    input[type="reset"].btn-lg-block,
+    input[type="button"].btn-lg-block {
+        width: 100%;
+    }
+    .btn-block + .btn-lg-block,
+    .btn-lg-block + .btn-block,
+    .btn-lg-block + .btn-lg-block {
+        margin-top: 0.5rem;
+    }
+}

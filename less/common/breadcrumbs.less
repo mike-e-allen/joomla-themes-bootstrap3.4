@@ -1,0 +1,32 @@
+.breadcrumb {
+	background-color: @breadcrumb-bg;
+	border: 1px solid @breadcrumb-border;
+	color: @breadcrumb-link-color;
+	margin-bottom: 10px;
+
+  > li {
+    + li:before {
+      content: "\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      content: ""; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0px;
+    }
+		
+		a {
+			color: @breadcrumb-link-color;
+			text-decoration: none;
+			
+			&:hover, 
+			&:focus {
+				color: @breadcrumb-link-hover-color;
+			}
+		}
+	}
+
+  > .active {
+    color: @breadcrumb-color;
+  }
+	
+	.divider {
+		color: @breadcrumb-divider;
+	}
+}

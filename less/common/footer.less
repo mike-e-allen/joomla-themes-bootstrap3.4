@@ -1,0 +1,115 @@
+.footer-outer {
+	margin-top: 20px;
+	color: @footer-color;
+	background-color: @footer-outer-bg;
+	border: 1px solid @footer-outer-border;
+
+	.panel {
+		background-color: @footer-inner-bg;
+		border: 1px solid @footer-inner-border;
+		padding: 20px;
+	}
+	
+	h1,  h2, h3,  h4, h5, h6 {
+		color: @footer-header-color;
+	}
+
+	a {
+		color: @footer-link-color;
+
+		&:hover,
+		&:focus {
+			color: @footer-link-hover-color;
+			background-color: @footer-link-hover-bg;
+		}
+	}
+	
+	#back-top {
+		color: @footer-back-top-color;
+		background-color: @footer-back-top-bg;
+		
+		a {
+			&:hover,
+			&:focus {
+				color: @footer-back-top-link-hover-color;
+				background-color: @footer-back-top-link-hover-bg;
+			}
+		}
+	}
+}
+
+.footer-inner {
+	.panel-variant(@footer-inner-border; @footer-header-color; @footer-inner-bg; @footer-inner-border);
+
+	box-shadow: none;
+	-webkit-box-shadow: none;
+
+  .nav {
+    > li > a {
+      &:hover,
+      &:focus {
+        color: @footer-link-hover-color;
+        background-color: @footer-link-hover-bg;
+      }
+    }
+  }
+}
+
+.footer-outer-xs {
+	margin-top: 0px;
+	color: @footer-xs-color;
+	background-color: @footer-xs-outer-bg;
+	border: 1px solid @footer-xs-outer-border;
+
+	.panel {
+		background-color: @footer-xs-inner-bg;
+		border: 1px solid @footer-xs-inner-border;
+		padding-top: 2px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+	}
+	
+	h1,  h2, h3,  h4, h5, h6 {
+		color: @footer-xs-header-color;
+	}
+
+	a {
+		color: @footer-xs-link-color;
+
+		&:hover,
+		&:focus {
+			color: @footer-xs-link-hover-color;
+			background-color: @footer-xs-link-hover-bg;
+		}
+	}
+	#back-top {
+		color: @footer-xs-back-top-color;
+		background-color: @footer-xs-back-top-bg;
+		
+		a {
+			&:hover,
+			&:focus {
+				color: @footer-xs-back-top-link-hover-color;
+				background-color: @footer-xs-back-top-link-hover-bg;
+			}
+		}
+	}
+}
+
+.footer-inner-xs {
+	.panel-variant(@footer-xs-inner-border; @footer-xs-header-color; @footer-xs-inner-bg; @footer-xs-inner-border);
+
+	box-shadow: none;
+	-webkit-box-shadow: none;
+
+  .nav {
+    > li > a {
+      &:hover,
+      &:focus {
+        color: @footer-xs-link-hover-color;
+        background-color: @footer-xs-link-hover-bg;
+      }
+    }
+  }
+}

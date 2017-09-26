@@ -1,0 +1,156 @@
+.navbar-mainmenu {
+  background-color: @navbar-mainmenu-bg;
+  border-color: @navbar-mainmenu-border;
+	font-family: @navbar-mainmenu-font;
+	font-size: @navbar-mainmenu-font-size;
+
+  .navbar-brand {
+    color: @navbar-mainmenu-brand-color;
+	padding-top: 3px;
+
+    &:hover,
+    &:focus {
+      color: @navbar-mainmenu-brand-hover-color;
+      background-color: @navbar-mainmenu-brand-hover-bg;
+    }
+	
+	img {
+		border:2px solid @navbar-mainmenu-border;
+		width: 44px;
+		height: 44px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;		
+		border-radius: 50%;
+		background-clip: border-box;
+		background-clip: border-box;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+		cursor: pointer;
+		background: white;
+	}
+  }
+ 
+  .navbar-text {
+    color: @navbar-mainmenu-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-mainmenu-link-color;
+	  border-radius: 4px;
+	  
+      &:hover,
+      &:focus {
+        color: @navbar-mainmenu-link-hover-color;
+        background-color: @navbar-mainmenu-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-mainmenu-link-active-color;
+        background-color: @navbar-mainmenu-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-mainmenu-link-disabled-color;
+        background-color: @navbar-mainmenu-link-disabled-bg;
+      }
+    }
+	
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @dropdown-link-active-bg;
+        color: @dropdown-link-active-color;
+      }
+    }
+
+     // Links in navbars
+     //
+     // Add a class to ensure links outside the navbar nav are colored correctly.
+    
+     .navbar-link {
+    	color: @navbar-mainmenu-link-color;
+    	&:hover {
+    	  color: @navbar-mainmenu-link-hover-color;
+    	}
+     }
+
+    .btn-link {
+	  color: @navbar-mainmenu-link-color;
+	  &:hover,
+	  &:focus {
+	    color: @navbar-mainmenu-link-hover-color;
+	  }
+	  &[disabled],
+	  fieldset[disabled] & {
+	    &:hover,
+	    &:focus {
+	  	color: @navbar-mainmenu-link-disabled-color;
+	    }
+	  }
+    }
+	 
+	// Dropdown section headers
+	.dropdown-header {
+	  font-family: @dropdown-header-font;
+	  font-size: @dropdown-header-font-size;
+	  color: @dropdown-header-color;
+	}	
+	
+	.dropdown-menu {
+	  font-family: @dropdown-font;
+	  font-size: @dropdown-font-size;
+	  background-color: @dropdown-bg;
+	  border-color: @dropdown-border;
+
+	  .divider {
+			background-color: @dropdown-divider-bg;
+	  }
+
+	  // Links within the dropdown menu
+	  > li > a {
+		color: @dropdown-link-color;
+	  }
+	  
+	  > li > a {
+	    &:hover,
+	    &:focus {
+		  color: @dropdown-link-hover-color;
+		  background-color: @dropdown-link-hover-bg;
+	    }
+	  }
+	  
+      > .active > a {
+	    &,
+	    &:hover,
+	    &:focus {
+  		  color: @dropdown-link-active-color;
+		  background-color: @dropdown-link-active-bg;
+	    }
+	  }
+	  
+	  // Disabled state
+	  //
+	  // Gray out text and ensure the hover/focus state remains gray
+      
+	  > .disabled > a {
+	    &,
+	    &:hover,
+	    &:focus {
+	  	color: @dropdown-link-disabled-color;
+	    }
+	  }
+	}
+  }
+
+  .navbar-form {
+    border-color: @navbar-mainmenu-border;
+  }
+}

@@ -1,0 +1,53 @@
+.banner {
+	.media-heading {
+		font-family: @banner-header-font;
+	}
+	
+	//cant use .panel-variant, as it doesnt support background color
+	.panel {
+		color: @banner-color;
+		border: 1px solid @banner-border;
+		background-color: @banner-bg;
+		margin-bottom: 0px;
+		
+		.row {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			height: 100%;
+		
+			.col {
+				z-index: 201;
+			}
+			
+		}
+		
+		.media-heading {
+			color: @banner-header-color;
+		}
+	}
+}
+
+.banner-xs {
+	.media-heading {
+		font-family: @xs-banner-header-font;
+	}
+	
+	//cant use .panel-variant, as it doesnt support background color
+	.panel {
+		color: @xs-banner-color;
+		border: 1px @xs-banner-border;
+		background-color: @xs-banner-bg;
+		margin-bottom: 0px;
+		
+		.row {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		
+		.media-heading {
+			color: @xs-banner-header-color;
+		}
+		
+	}
+}
+

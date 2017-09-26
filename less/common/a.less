@@ -1,0 +1,11 @@
+.a-variant(@color; @hover-color; @hover-bg) {
+	a {
+		color: @color;
+	
+		&:hover,
+		&:focus {
+			color: @hover-color;
+			background: @hover-bg;
+		}
+	}
+}

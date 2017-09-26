@@ -1,0 +1,32 @@
+//
+// Pager pagination
+// --------------------------------------------------
+
+
+.pager {
+  li {
+    > a,
+    > span {
+	  color: @pager-color;
+      background-color: @pager-bg;
+      border: 1px solid @pager-border;
+    }
+
+    > a:hover,
+    > a:focus {
+	  color: @pager-hover-color;
+      background-color: @pager-hover-bg;
+      border: 1px solid @pager-hover-border;
+    }
+  }
+
+  .disabled {
+    > a,
+    > a:hover,
+    > a:focus,
+    > span {
+      color: @pager-disabled-color;
+      background-color: @pager-bg;
+    }
+  }
+}

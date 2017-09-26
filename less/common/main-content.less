@@ -1,0 +1,75 @@
+.main-content {
+	
+	.panel {
+		background: @main-content-bg;
+		border: 1px solid @main-content-border;
+	}
+	
+	.panel-body {
+		padding: 19px;
+	}
+	
+	.panel-default {
+		.panel-variant(@main-content-panel-body-border; @main-content-panel-heading-color; @main-content-panel-heading-bg; @main-content-panel-heading-border);
+	}
+
+	.page-header {
+		margin: 0px;
+		padding-bottom: 0;
+		border: 0;
+		
+		.a-variant(@main-content-header-color, @main-content-header-hover-color, @main-content-header-hover-bg);
+	}
+		
+	h1, h2, h3, h4, h5, h6 {
+		color: @main-content-header-color;
+		border-bottom: 1px solid @main-content-divider-color;
+		padding-bottom: 9px;
+		margin-bottom: 5px;
+
+		font-family: @main-content-header-font;
+	}
+	h1, .h1 { font-size: floor((@main-content-header-font-size-base * 2.6)); }
+	h2, .h2 { font-size: floor((@main-content-header-font-size-base * 2.15)); }
+	h3, .h3 { font-size: floor((@main-content-header-font-size-base * 1.7)); }
+	h4, .h4 { font-size: floor((@main-content-header-font-size-base * 1.25)); }
+	h5, .h5 { font-size: @main-content-header-font-size-base; }
+	h6, .h6 { font-size: floor((@main-content-header-font-size-base * 0.85)); }
+	
+	legend {
+		color: @main-content-header-color;
+		border-bottom: 1px solid @main-content-divider-color;
+	}
+
+	.text-muted {
+		color: @main-content-muted-color;
+		.a-variant(@main-content-muted-link-color, @main-content-muted-link-hover-color, @main-content-muted-link-hover-bg);
+
+	}
+	
+	.icons {
+		.a-variant(@main-content-icon-link-color, @main-content-icon-link-hover-color, @main-content-icon-link-hover-bg);
+		padding-bottom: 20px;
+	}
+	
+	.item-image {
+		padding-bottom: 20px;
+	}
+	
+	.table-bordered,
+	.table-bordered > thead > tr > th, 
+	.table-bordered > tbody > tr > th, 
+	.table-bordered > tfoot > tr > th, 
+	.table-bordered > thead > tr > td, 
+	.table-bordered > tbody > tr > td, 
+	.table-bordered > tfoot > tr > td
+	{
+		border-color: #757575;
+	}
+	
+	.item-page .table thead th {
+		color: #ffffff;
+		font-family: 'Fjalla One';
+		font-weight: normal;
+	}
+}
