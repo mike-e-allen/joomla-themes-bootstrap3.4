@@ -12,9 +12,6 @@
 		<server type="extension" name="Joomla! Update Component Update Site">https://we-write-code-not-art.com/updates/joomla/themes/bootstrap3.4.xml</server>
 	</updateservers-->
 	<files>
-	</files>
-
-	<files>
 		<filename>component.php</filename>
 		<filename>config.php</filename>
 		<filename>css.background.php</filename>
