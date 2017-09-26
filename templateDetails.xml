@@ -8,23 +8,10 @@
 	<authorEmail>michael@we-write-code-not-art.com</authorEmail>
 	<copyright>Copyright (C) 2016 Michael E Allen. All rights reserved.</copyright>
 	<description>Basic Bootstrap 3.4 enabled template</description>
+	<!--updateservers>
+		<server type="extension" name="Joomla! Update Component Update Site">https://we-write-code-not-art.com/updates/joomla/themes/bootstrap3.4.xml</server>
+	</updateservers-->
 	<files>
-		<filename>component.php</filename>
-		<filename>error.php</filename>
-		<filename>favicon.ico</filename>
-		<filename>index.php</filename>
-		<filename>templateDetails.xml</filename>
-		<filename>template_preview.png</filename>
-		<filename>template_thumbnail.png</filename>
-		<folder>css</folder>
-		<folder>html</folder>
-		<folder>images</folder>
-		<folder>img</folder>
-		<folder>js</folder>
-		<folder>less</folder>
-		<folder>fonts</folder>
-		<folder>plugins</folder>
-		<folder>site</folder>
 	</files>
 	<positions>
 		<position>menu-collapsed</position>
