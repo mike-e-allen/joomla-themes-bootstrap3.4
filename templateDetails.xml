@@ -13,6 +13,38 @@
 	</updateservers-->
 	<files>
 	</files>
+
+	<files>
+		<filename>component.php</filename>
+		<filename>config.php</filename>
+		<filename>css.background.php</filename>
+		<filename>css.baner.php</filename>
+		<filename>css.banner-xs.php</filename>
+		<filename>css.breadcrumbs.php</filename>
+		<filename>css.content.php</filename>
+		<filename>css.content.sidebars.php</filename>
+		<filename>css.footer.php</filename>
+		<filename>css.footer-inner.php</filename>
+		<filename>css.footer-outer.php</filename>
+		<filename>css.mainmenu.php</filename>
+		<filename>css.php</filename>
+		<filename>css.site.php</filename>
+		<filename>error.php</filename>
+		<filename>template.txt</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>models</folder>
+		<folder>site</folder>
+	</files>
+	
 	<positions>
 		<position>menu-collapsed</position>
 		<position>profile-collapsed</position>
